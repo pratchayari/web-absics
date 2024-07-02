@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example8-13</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            font: 14px tahoma;
+        }
+        caption { caption-side: top }
+        #c1 { width: 40%; }
+        #c2 { width: 25%; }
+        #c3 { width: 15%; }
+        #c4 { width: 20%; }
+        
+        td, th {	
+            border: dotted 1px gray;
+            padding: 5px; 
+        }
+        thead {
+            background: steelblue;
+            color: white;
+        }
+        tr.even { background: gainsboro; }
+        td:nth-child(n+2) { text-align: right; }
+        tfoot {
+            background: powderblue;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>รายสินค้า</caption>
+        <thead>
+        <tr>
+            <th id="c1">ชื่อสินค้า</th><th id="c2">ราคา</th>
+            <th id="c3">จำนวน</th><th id="c4">รวม</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td>เสื้อ</td><td>500</td><td>2</td><td>1,000</td>
+        </tr>
+        <tr class="even">
+            <td>กางเกง</td><td>1,000</td><td>3</td><td>3,000</td>
+        </tr>
+        <tr>
+            <td>หมวก</td><td>250</td><td>2</td><td>500</td>
+        </tr>
+        <tr class="even">
+            <td>รองเท้า</td><td>2,000</td><td>1</td><td>2,000</td>
+        </tr>
+        <tr>
+            <td>เข็มขัด</td><td>500</td><td>1</td><td>500</td>
+        </tr>
+        </tbody>
+        
+        <tfoot>
+        <tr>
+            <td colspan="3">รวมทั้งสิ้น</td><td>7,000</td>
+        </tr>
+        </tfoot>    
+        </table>            
+</body>
+</html>

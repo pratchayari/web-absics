@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-6</title>
+    <style>
+        [readonly] {
+            background: lightgray;
+            color: gray;
+        }
+        [required] {
+            background: lightcyan;
+            border: solid 1px orangered;
+        }
+        [type] {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 12pt;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>        
+</head>
+<body style="margin: 20px;">
+    <form>
+        <input type="text"readonly value="readonly">
+        <input type="text" required placeholder="required">
+        <input type="text">
+   </form>       
+</body>
+</html>

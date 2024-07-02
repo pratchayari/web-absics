@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-11</title>
+<style>
+    input, textarea {
+        border: solid 1px green;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    :required { background: lavender; }
+    :required + span { color: red; }
+</style>    
+</head>
+<body style="margin: 20px;">
+    <form>
+        <input type="text" required><span>&nbsp;*</span>
+        <br><br>
+        <input type="text"><br><br>
+        <input type="text"><br><br>
+        <textarea required></textarea><span>&nbsp;*</span>
+        <br><br>
+        <button>OK</button>
+    </form>         
+</body>
+</html>

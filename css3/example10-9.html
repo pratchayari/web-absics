@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-9</title>
+    <style>
+        [type="radio"][name="payment"] + label {
+            font-weight: bold;
+        }
+        [type="radio"][name="card"] + label {
+            color:crimson;
+            font-style: italic;
+        }
+        #divCard {
+            padding-left: 20px;
+        }
+    </style>          
+</head>
+<body style="margin: 20px;">
+    <form>
+        <h3>วิธีชำระเงิน:</h3>
+        <input type="radio" name="payment" id="pm1">
+        <label for="pm1">Mobile Banking</label><br>
+        <input type="radio" name="payment" id="pm2">
+        <label for="pm2">บัตรเครดิต</label>
+        <div id="divCard">
+            <input type="radio" name="card" id="cd1">
+            <label for="cd1">VISA</label><br>
+            <input type="radio" name="card" id="cd2">
+            <label for="cd2">MasterCard</label>
+        </div>
+    </form>           
+</body>
+</html>

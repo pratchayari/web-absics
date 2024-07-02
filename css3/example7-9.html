@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example7-9</title>
+    <style>
+        p:first-child {
+            background-color: lightgray;
+            font-size: 18pt;
+            font-weight: bold;
+        }
+        p:last-child {
+            background-color: black;
+                color: white;
+                font-style: italic;
+        }    
+        li { font-size: 16pt }
+        li:nth-child(1) { color: red }
+        li:nth-child(3) { color: lightblue }
+    </style>    
+</head>
+<body>
+    <div>
+    	<p>first-child / nth-child(1)</p>
+	    <p>nth-child(2)</p>
+	    <p>nth-child(3)</p>
+	    <p>last child / nth-child(4)</p>
+    </div>
+    <ul>
+        <li>red</li>
+        <li>green</li>
+        <li>lightblue</li>
+        <li>yellow</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example8-8</title>
+    <style>
+        #menubar { background-color: #cdf; }
+        a.menu:link { color: blue; }
+        a.menu:visited { color: purple; }
+        a.menu:hover { color: whitesmoke; background-color: green; }
+        a.menu:active { color: red; }
+        tr:nth-child(n+2):hover {   /* แถวที่ 2 เป็นต้นไป */
+            color: blue;
+            background-color: lightgray;
+        }
+    </style>    
+</head>
+<body>
+	<div id="menubar">
+		<a class="menu" href="#">หน้าแรก</a>&nbsp; - &nbsp;
+		<a class="menu" href="#">สินค้า</a>&nbsp; - &nbsp;
+		<a class="menu" href="#">ติดต่อเรา</a>
+	</div>
+	<br><br>
+    <table border="1">
+    <tr style="background-color: black; color:white">
+        <td>ประเภทสินค้า</td> <td>ยี่ห้อ</td> <td>ราคา</td>
+    </tr>
+    <tr>
+        <td>Notebook</td> <td>MSI</td> <td>28,000</td> 
+    </tr>
+    <tr>
+        <td>Smart Phone</td> <td>iPhone</td> <td>35,000</td> 
+    </tr>
+    <tr>
+        <td>Tablet</td>	<td>Samsung</td> <td>13,000</td>
+    </tr>
+    <tr>
+        <td>Digital Camera</td>	<td>Canon</td> <td>14,000</td>
+    </tr>
+    </table>  
+</body>
+</html>

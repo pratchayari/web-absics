@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-4</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 80px;
+            text-align: right;
+            margin-bottom: 7px;
+        }
+        label.float {
+            float: left; 
+            margin-right: 4px;
+        }
+        .clear { clear: right;}
+    </style>        
+</head>
+<body style="margin: 20px;">
+    <form>
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="phone">เบอร์โทร:</label>
+        <input type="text" id="phone">
+        <br>
+        <label for="addr" class="float">ที่อยู่:</label>
+        <textarea id="addr"></textarea>
+        <br class="clear">
+    </form>            
+</body>
+</html>

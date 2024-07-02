@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-12</title>
+    <style>
+        input, textarea {
+            border: solid 1px green;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 7px;
+        }
+        :invalid + span { color: red; }
+        :valid + span { display: none; }
+    </style>    
+</head>
+<body style="margin: 20px;">
+    <form>
+        <input type="text" required>
+        <span>*</span><br>
+
+    	<input type="text"><br>
+
+    	<textarea required></textarea>
+ 	    <span>*</span><br>
+
+    	<button>OK</button>
+    </form>         
+</body>
+</html>

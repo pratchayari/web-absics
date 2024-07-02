@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example10-14</title>
+    <style>
+        form :not(button) { 
+            background: beige; 
+            border: solid 1px green;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;   
+        }
+        button {
+            background-color: navy;
+            color: white;
+            border-radius: 5px;
+            padding: 3px 5px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            min-width: 100px;
+            padding: 5px;
+        }
+        tr:first-child { 
+            background-color: green;
+            color: white;
+        }
+        td:not(:first-child) { 
+            text-align: right;
+        }
+    </style>       
+</head>
+<body style="margin: 20px;">
+    <form action="#">
+        <input type="text"> <br>
+        <textarea></textarea> <br>
+        <select><option>One</option></select>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <br>  
+    <table border="1">
+    <tr><th>สินค้า</th><th>ราคา</th><th>คงเหลือ</th></tr>
+    <tr><td>HTML5</td><td>550</td><td>5</td></tr>
+    <tr><td>CSS3</td><td>330</td><td>3</td></tr>
+    <tr><td>JavaScript</td><td>1,000</td><td>10</td></tr>
+    <tr><td>Bootstrap</td><td>500</td><td>15</td></tr>
+    <tr><td>PHP</td><td>1,900</td><td>9</td></tr>
+    </table>           
+</body>
+</html>
