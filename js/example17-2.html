@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example17-2</title>   
+    <script>
+    function isNumber(n) {
+        if (isNaN(n)) {
+            return false;
+        } 
+        return true;
+    }
+    function circleArea(radius) {
+        if (!isNumber(radius)) {
+            return;
+        }
+        return 3.14 * (radius ** 2);
+    }
+
+    function rectArea(width, height) {
+        if (!isNumber(width) || !isNumber(height)) {
+            return;
+        }
+        return width * height;
+    }
+
+    function triangleArea(base, height) {
+        if (!isNumber(base) || !isNumber(height)) {
+            return;
+        }
+        return 0.5 * base * height;
+    }
+    </script>
+</head>
+<body>
+    <script>
+        document.write(`
+            วงกลม รัศมี 15 มีพื้นที่ ${circleArea(15)} <br>
+            สี่เหลี่ยม กว้าง 15 สูง 20 มีพื้นที่ ${rectArea(15, 20)} <br>
+            สามเหลี่ยม ฐานกว้าง 15 สูง 20 มีพื้นที่ ${triangleArea(15, 20)} 
+            <hr>
+            วงกลม รัศมี x มีพื้นที่ ${circleArea('x')} <br>
+            สี่เหลี่ยม กว้าง w สูง 20 มีพื้นที่ ${rectArea('w', 20)}
+        `);
+    </script>    
+</body>
+</html>

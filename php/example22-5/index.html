@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example22-5</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+        form * {
+            font-size: 13pt;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="select.php">
+        <label for="size">ขนาดฟอนต์:</label><br>
+        <select name="size" id="size">
+            <option value="16pt">เล็ก</option>
+            <option value="20pt" selected>กลาง</option>
+            <option value="24pt">ใหญ่</option>
+        </select>
+        <br><br>
+        <label for="style">รูปแบบข้อความ:</label><br>
+        <select name="styles[]" id="style" multiple>
+            <option value="bold">หนา</option>
+            <option value="italic">เอียง</option>
+            <option value="underline">ขีดเส้นใต้</option>
+            <option value="strike">ขีดเส้นทับ</option>
+        </select>   
+        <br><br>
+        <button>ตกลง</button>
+    </form>
+</body>
+</html>

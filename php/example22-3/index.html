@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example22-3</title>
+    <style>
+        body { margin: 30px; }
+        label {
+            display: inline-table;
+            width: 80px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        input[type="text"] { width: 250px; }
+    </style>
+</head>
+<body>
+    <h3>ที่อยู่</h3>
+    <form method="post" action="read-array.php">
+        <label for="a1">บรรทัดที่ 1:</label>
+        <input type="text" name="addr[]" id="a1">
+        <br>
+        <label for="a2">บรรทัดที่ 2:</label>
+        <input type="text" name="addr[]" id="a2">
+        <br>
+        <label for="a3">บรรทัดที่ 3:</label>
+        <input type="text" name="addr[]" id="a3">
+        <br><br>
+        <label></label>
+        <button>บันทึกข้อมูล</button>
+    </form>
+</body>
+</html>

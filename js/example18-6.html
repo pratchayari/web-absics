@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example18-6</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        form * {
+            font-size: larger;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input, select {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+    function calculate() {
+        let n1 = document.getElementById('n1').value;
+        let n2 = document.getElementById('n2').value;
+        let op = document.getElementById('op').value;
+        let r = document.getElementById('r');
+        let str = `${n1} ${op} ${n2}`;
+        let ans = eval(str);  //ประมวลผลโค้ดที่เขียนในแบบสตริง
+        if (!isNaN(ans)) {
+            r.value = ans;
+        } else {
+            r.value = '';
+        }
+	}
+	</script>
+</head>
+<body>
+    <form>
+        <label for="n1">จำนวนที่ 1:</label>
+        <input type="number" id="n1" value="0" oninput="calculate()"><br>
+
+        <label></label>
+        <select id="op" onchange="calculate()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br>
+
+        <label for="n1">จำนวนที่ 2:</label>
+        <input type="number" id="n2" value="0" oninput="calculate()"><br>
+
+        <label for="r">ผลลัพธ์</label>
+        <input type="number" id="r" disabled><br>        
+    </form>
+
+    <script>
+        calculate(); //ให้เรียกขึ้นมาทำงานทันทีเมื่อโหลดเพจเสร็จ
+    </script>
+</body>
+</html>

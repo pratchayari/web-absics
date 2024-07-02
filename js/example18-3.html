@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example18-3</title>   
+    <style>
+        form * {
+            display: block;
+            margin-bottom: 10px;
+        }
+        [type=radio], label {
+            display: inline !important;
+        }
+    </style>
+</head>
+<body>
+	<form>
+		<input id="text" type="text" value="JavaScript">
+   	 	<textarea id="textarea">ECMAScript</textarea>
+    	<input id="radio" type="radio" value="Bootstrap">
+        <label for="radio">Bootstrap</label>
+    	<select id="select">
+    		<option value="One">1</option>
+        	<option value="Two" selected>2</option>
+ 		</select>
+	</form>
+    <hr>
+	<script>
+		var text = document.getElementById('text').value;
+        document.write(`text value: ${text}<br>`);
+
+		var tarea = document.getElementById('textarea').value;	
+		document.write(`textarea value: ${tarea}<br>`);
+
+		var radio = document.getElementById('radio').value;		
+        document.write(`radio value: ${radio}<br>`);
+
+		var select = document.getElementById('select').value; 
+        document.write(`select value: ${select}`);
+	</script>
+</body>
+</html>

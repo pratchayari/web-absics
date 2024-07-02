@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example22-2</title>
+    <style>
+        body { margin: 30px; }
+        label {
+            display: inline-table;
+            width: 80px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h3>ข้อมูลส่วนตัว</h3>
+    <form method="post" action="read-chars.php">
+        <label for="login">อีเมล:</label>
+        <input type="email" name="login" id="login" size="30">
+        <br>
+        <label for="pswd">รหัสผ่าน:</label>
+        <input type="password" name="pswd" id="pswd" size="30">
+        <br>
+        <label for="">วันเกิด:</label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <label for="sal">เงินเดือน:</label>
+        <input type="number" name="salary" id="sal" value="50000" disabled>
+        <br>
+        <label for="info">ข้อมูล<br>เพิ่มเติม:</label>
+        <textarea name="info" id="info" rows="3" cols="30"></textarea>
+        <br><br>
+        <label></label>
+        <button>บันทึกข้อมูล</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example17-1</title>    
+</head>
+<body>
+    <script>
+        var thaiDigits = ['๐', '๑', '๒', '๓', '๔', '๕', 
+                         '๖', '๗', '๘', '๙'];
+    
+         var words = ['ศูนย์', 'หนึ่ง', 'สอง', 'สาม', 'สี่', 'ห้า', 
+                     'หก', 'เจ็ด', 'แปด', 'เก้า'];
+        
+         var number = prompt('กำหนดตัวเลขอารบิกเป็นจำนวนเต็มบวก');
+         var len = number.length;		//จำนวนตัวเลข (ความยาว)
+         var thaiNum = '';			
+         var thaiWord = '';		
+         var digit = '';
+    
+         for (i = 0; i < len; i++) {
+             digit = number[i];	    //ตัวเลขในลำดับที่ i
+             thaiNum += thaiDigits[digit];
+             thaiWord += words[digit];
+         }		
+         
+         document.write(`
+		    เลขไทย: ${thaiNum} <br>
+		    คำอ่าน: ${thaiWord}
+	    `);
+    </script>    
+</body>
+</html>

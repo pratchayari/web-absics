@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example17-3</title>   
+    <script>
+    function thaiDate(yearCE, month=1, day=1) {
+        let m = [
+            'มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 
+            'พฤษภาคม','มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 
+            'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'    
+        ];
+
+        yearBE = yearCE + 543;
+
+        return `${day} ${m[month-1]} ${yearBE}`;
+    }
+    </script>
+</head>
+<body>
+    <script>
+        document.write(`
+            (2024) => ${thaiDate(2024)} <br>
+            (2024, 12) => ${thaiDate(2024, 12)} <br>
+            (2024, 2, 28) => ${thaiDate(2024, 2, 28)} <br>
+        `);
+    </script>    
+</body>
+</html>

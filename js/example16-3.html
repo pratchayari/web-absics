@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example16-3</title>    
+</head>
+<body>
+    <script>
+        var base = parseFloat(prompt('เลขฐาน'));
+        var pow = parseInt(prompt('เลขชี้กำลัง'));
+   
+        if (pow < 0)  {
+            alert('เลขชี้กำลังต้องเป็นจำนวนเต็มบวก');
+        } else {
+            var result = 1;
+            for (i = 1; i <= pow; i++) {
+                result *= base;
+            }	
+            document.write(
+               `${base}<sup>${pow}</sup> = ${result}`
+           );
+        }
+   </script>   
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example22-4</title>
+    <style>
+        body { margin: 30px; }
+        div {
+            display: table-cell;
+            width: 100px;
+            margin-bottom: 7px;
+        }
+    </style>      
+</head>
+<body>
+<form method="post" action="checkbox-radio.php">
+    <b>รูปแบบฟอนต์:</b>
+    <div>
+        <input type="checkbox" id="b" name="styles[]" value="bold">
+        <label for="b">หนา</label>
+    </div>
+    <div>
+        <input type="checkbox" id="i" name="styles[]" value="italic">
+        <label for="i">เอียง</label>
+    </div>
+    <div>
+        <input type="checkbox" id="u" name="styles[]" value="underline">
+        <label for="u">ขีดเส้นใต้</label>
+    </div>
+    <br>
+    <b>ขนาดของฟอนต์:</b>
+    <div>
+        <input type="radio" id="s" name="size" value="12px">
+        <label for="s">เล็ก</label>
+    </div>
+    <div>
+        <input type="radio" id="m" name="size" value="16px">
+        <label for="m">กลาง</label>
+    </div>
+    <div>
+        <input type="radio" id="l" name="size" value="20px">
+        <label for="l">ใหญ่</label>
+    </div>
+    <br><br>
+    <div></div><div><button>ตกลง</button></div>
+</form>          
+</body>
+</html>

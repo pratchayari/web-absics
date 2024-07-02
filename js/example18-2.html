@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example18-2</title>   
+    <script>
+
+    </script>
+</head>
+<body>
+    <span id="sp1">Hello</span>&nbsp;<span id="sp2">World</span>
+    <br><br>
+    <button id="bt">Start</button>
+    <script>
+        document.getElementById('sp1').innerHTML = 
+            'สวัสดีค่ะ คุณ';
+
+        document.getElementById('sp2').innerHTML = 
+            '<b>สมชาย</b>';
+
+        var bt = document.querySelector('#bt');
+        if (bt.innerHTML == 'Start') {
+            bt.innerHTML = 'Stop';
+        }
+    </script> 
+</body>
+</html>

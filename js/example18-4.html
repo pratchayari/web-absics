@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>example18-4</title>   
+</head>
+<body>
+    <form>
+        <input type="checkbox" value="bold" id="b">
+        <label for="b">bold</label>
+        <input type="checkbox" value="italic" id="i" checked>
+        <label for="i">italic</label>
+        <input type="checkbox" value="underline" id="u" checked>
+        <label for="u">underline</label>
+        <br>
+        <input type="radio" name="size" value="16" id="s16">
+        <label for="s16">16</label>
+        <input type="radio" name="size" value="18" checked 
+            id="s18"
+        >
+        <label for="s18">18</label>
+        <input type="radio" name="size" value="20" id="s20">
+        <label for="s20">20</label>
+    </form>
+    <hr>
+    <script>
+        var chks = document.querySelectorAll(
+            '[type="checkbox"]'
+        );
+        var chkVals = [];
+        for (i = 0; i < chks.length; i++) {
+            if (chks[i].checked) {		//checked == true
+                chkVals.push(chks[i].value);
+            }
+        }
+        document.write(chkVals.join(', ') + '<br>');
+    
+        var rds = document.getElementsByName('size');
+        var rdVals = [];
+        for (i = 0; i < rds.length; i++) {
+            if (rds[i].checked) {		//checked == true
+                rdVals.push(rds[i].value);
+            }
+        }
+        document.write(rdVals.join(', '));
+    </script>    
+</body>
+</html>
